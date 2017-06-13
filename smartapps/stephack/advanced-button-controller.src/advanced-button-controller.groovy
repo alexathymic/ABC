@@ -285,7 +285,7 @@ def initChild() {
 }
 
 def defaultLabel() {
-	return "${buttonDevice} Mapping"
+	return "${buttonDevice} (ABC Mapping)"
 }
 
 def getPreferenceDetails(){
@@ -439,7 +439,7 @@ def messageHandle(msg, inApp) {
 
 def smsHandle(phone, msg){
     log.debug "SMS sent"
-    sendSms(phone, msg ?:"No custom text entered on: $app.label")
+    sendSms(phone, msg ?:"No custom text entered on: $app.")
 }
 
 def changeMode(mode) {
